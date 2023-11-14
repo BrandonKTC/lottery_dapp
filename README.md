@@ -72,13 +72,13 @@ As a lottery admin, you get commision for evey ticket purchased! and you control
 
  
  ## Showcasing:
- <div align="center">
-      <img src="https://postimg.cc/ZByjHP0M" alt="Logo" style="width:80%;">
-</div>
 
- <div align="center">
-      <img src="https://postimg.cc/NyKxG88j" alt="Logo" style="width:80%;">
-</div>
+ - lottery
+ [![lottery-dapp.png](https://i.postimg.cc/cHFjsXW0/lottery-dapp.png)](https://postimg.cc/ZByjHP0M)
+
+- admin control
+
+ [![admin-control.png](https://i.postimg.cc/tg5v52YW/admin-control.png)](https://postimg.cc/NyKxG88j)
 
 
 
