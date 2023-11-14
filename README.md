@@ -65,7 +65,7 @@ We have a list of [good first issues](https://github.com/vercel/next.js/labels/g
 If you believe you have found a security vulnerability in Next.js, we encourage you to responsibly disclose this and not open a public issue. We will investigate all legitimate reports. Email `security@vercel.com` to disclose any security vulnerabilities.
 
 <div align="center">
-      <img src="https://th.bing.com/th/id/R.cf3f7639754e0dc19bbc1a5f1666e347?rik=Ath%2b%2bmDhk6YVaw&pid=ImgRaw&r=0" alt="Logo" style="width:80%;">
+      <img src="https://pbs.twimg.com/media/Ei4N925X0AA91Me.png" alt="Logo" style="width:80%;">
 </div>
 
 # Crypto-Lottery Web App:
@@ -90,7 +90,13 @@ As a lottery admin, you get commision for evey ticket purchased! and you control
 
  
  ## Showcasing:
-![lottery_dapp](https://github.com/mrseif123/Crypto-Lottery/assets/77462798/c5bed211-6731-416c-bce9-8ec093a23783)
+ <div align="center">
+      <img src="" alt="Logo" style="width:80%;">
+</div>
+
+ <div align="center">
+      <img src="" alt="Logo" style="width:80%;">
+</div>
 
 
 
@@ -98,5 +104,4 @@ As a lottery admin, you get commision for evey ticket purchased! and you control
 
 
 
-![admin_control](https://github.com/mrseif123/Crypto-Lottery/assets/77462798/170f68c7-89f0-4887-8784-f8da47fbea78)
 
