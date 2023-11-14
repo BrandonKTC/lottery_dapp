@@ -144,7 +144,7 @@ const { data: expiration } = useContract( "expiration");
   return (
     <div className="bg-[#091B18] min-h-screen flex flex-col">
       <Head>
-        <title>PAPAFAM Lottery</title>
+        <title>Epitech Lottery</title>
       </Head>
 
       <div className="flex-1">
