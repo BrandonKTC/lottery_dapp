@@ -64,22 +64,39 @@ We have a list of [good first issues](https://github.com/vercel/next.js/labels/g
 
 If you believe you have found a security vulnerability in Next.js, we encourage you to responsibly disclose this and not open a public issue. We will investigate all legitimate reports. Email `security@vercel.com` to disclose any security vulnerabilities.
 
-# Next.js + Tailwind CSS Example
+<div align="center">
+      <img src="https://th.bing.com/th/id/R.cf3f7639754e0dc19bbc1a5f1666e347?rik=Ath%2b%2bmDhk6YVaw&pid=ImgRaw&r=0" alt="Logo" style="width:80%;">
+</div>
 
-Tailwind CSS is integrated into the `create-next-app` CLI, which supports TypeScript and JavaScript, as well as the App Router (`app/`) and the pages directory `pages/`.
+# Crypto-Lottery Web App:
+A Next.Js Web app for crypto-lottery, where users can buy tickets using MATIC cryptocurrency for the lottery, and an admin draws the winner using Solidity Smart contract backend, and thirdweb servers for connecting functionality.
+All of the WEB3 transactions are currently registred on MATIC Mumbai (a test-net for the MATIC cryptocurrency) to prevent real currency transactions, other than that transaction real and appear between wallets.
+As a lottery admin, you get commision for evey ticket purchased! and you control the flow of the lottery draw.
 
-## How to use
+## Project Technological Stack:
+* NextJS & Vercel for quick start and deployment.
+* ReactJS for the UI.
+* Typescript & Javascript for typing.
+* TailwindCSS for styling.
+* Solidity for smart contracts.
+* Thirdweb for deploying the smart contract.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap a project preconfigured with Tailwind CSS:
+### Mumbai Test Net data:
+-Network Name: Mumbai Testnet\
+-New RPC URL: https://rpc-mumbai.maticvigil.com\
+-Chain ID: 80001\
+-Currency Symbol: MATIC\
+-Block Explorer URL: https://polygonscan.com/
 
-```bash
-npx create-next-app --tailwind with-tailwindcss-app
-```
+ 
+ ## Showcasing:
+![lottery_dapp](https://github.com/mrseif123/Crypto-Lottery/assets/77462798/c5bed211-6731-416c-bce9-8ec093a23783)
 
-```bash
-yarn create next-app --tailwind with-tailwindcss-app
-```
 
-```bash
-pnpm create next-app --tailwind with-tailwindcss-app
-```
+
+
+
+
+
+![admin_control](https://github.com/mrseif123/Crypto-Lottery/assets/77462798/170f68c7-89f0-4887-8784-f8da47fbea78)
+
