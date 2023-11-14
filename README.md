@@ -46,7 +46,7 @@ Our [Code of Conduct](https://github.com/vercel/next.js/blob/canary/CODE_OF_COND
 # Crypto-Lottery Web App:
 
 <div align="center">
-      <img src="https://pbs.twimg.com/media/Ei4N925X0AA91Me.png" alt="Logo" style="width:50%;">
+      <img src="https://pbs.twimg.com/media/Ei4N925X0AA91Me.png" alt="Logo" style="width:40%;">
 </div>
 
 ## About
@@ -62,14 +62,6 @@ As a lottery admin, you get commision for evey ticket purchased! and you control
 * TailwindCSS for styling.
 * Solidity for smart contracts.
 * Thirdweb for deploying the smart contract.
-
-### Mumbai Test Net data:
--Network Name: Mumbai Testnet\
--New RPC URL: https://rpc-mumbai.maticvigil.com\
--Chain ID: 80001\
--Currency Symbol: MATIC\
--Block Explorer URL: https://polygonscan.com/
-
  
  ## Showcasing:
 
@@ -79,11 +71,4 @@ As a lottery admin, you get commision for evey ticket purchased! and you control
 
 #### admin control
  [![admin-control.png](https://i.postimg.cc/tg5v52YW/admin-control.png)](https://postimg.cc/NyKxG88j)
-
-
-
-
-
-
-
 
