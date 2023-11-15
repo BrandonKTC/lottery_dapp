@@ -1,14 +1,11 @@
-# Crypto-Lottery Web App:
+# Decentralized Crypto-Lottery Web App:
 
-<div align="center">
-      <img src="https://pbs.twimg.com/media/Ei4N925X0AA91Me.png" alt="Logo" style="width:20%;">
-</div>
+Lottery-dapp est un système de loterie décentralisé implémenté en Solidity. Ce projet est construit sur Ethereum et est conçu pour être une démonstration simple mais efficace d'un système de loterie basé sur la blockchain.
 
-## About
+Addresse du smart contract : [0xfc3a428A40E80Bdf35F431c4fE3391C82D14708d](https://sepolia.etherscan.io/address/0xfc3a428A40E80Bdf35F431c4fE3391C82D14708d)
 
-A Next.Js Web app for crypto-lottery, where users can buy tickets using MATIC cryptocurrency for the lottery, and an admin draws the winner using Solidity Smart contract backend, and thirdweb servers for connecting functionality.
-All of the WEB3 transactions are currently registred on MATIC Mumbai (a test-net for the MATIC cryptocurrency) to prevent real currency transactions, other than that transaction real and appear between wallets.
-As a lottery admin, you get commision for evey ticket purchased! and you control the flow of the lottery draw.
+version en ligne du site :
+[Lottery-Dapp](https://lottery-dapp-brandonktc.vercel.app/)
 
 ## Project Technological Stack:
 * NextJS & Vercel for quick start and deployment.
@@ -26,7 +23,3 @@ As a lottery admin, you get commision for evey ticket purchased! and you control
 
 #### admin control
  [![admin-control.png](https://i.postimg.cc/tg5v52YW/admin-control.png)](https://postimg.cc/NyKxG88j)
-
-
-## version en ligne du site
-#### <h1><a href="https://lottery-dapp-brandonktc.vercel.app/">Click here</a></h1>
