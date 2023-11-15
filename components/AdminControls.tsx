@@ -6,8 +6,8 @@ import {
 } from "@heroicons/react/24/solid";
 import {
   useContract,
-  useContractCall,
-  useContractData,
+  useContractWrite,
+  useContractEvents,
 } from "@thirdweb-dev/react";
 import { ethers } from "ethers";
 import React from "react";
@@ -19,21 +19,21 @@ function AdminControls() {
     process.env.NEXT_PUBLIC_LOTTERY_CONTRACT_ADDRESS
   );
 
-  const { mutateAsync: DrawWinnerTicket } = useContractCall(
+  const { mutateAsync: DrawWinnerTicket } = useContractWrite(
     contract,
     "DrawWinnerTicket"
   );
 
-  const { data: totalCommission } = useContractData(
+  const { data: totalCommission } = useContractEvents(
     contract,
     "operatorTotalCommission"
   );
 
-  const { mutateAsync: RefundAll } = useContractCall(contract, "RefundAll");
+  const { mutateAsync: RefundAll } = useContractWrite(contract, "RefundAll");
 
-  const { mutateAsync: restartDraw } = useContractCall(contract, "restartDraw");
+  const { mutateAsync: restartDraw } = useContractWrite(contract, "restartDraw");
 
-  const { mutateAsync: WithdrawCommission } = useContractCall(
+  const { mutateAsync: WithdrawCommission } = useContractWrite(
     contract,
     "WithdrawCommission"
   );

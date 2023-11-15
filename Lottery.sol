@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0
 import "@openzeppelin/contracts/utils/Strings.sol";
 
-pragma solidity >= 0.8.17 <0.9.0;
+pragma solidity >= 0.8.0 <0.10.0;
 
 contract Lottery {
     uint256 public constant ticketPrice = 0.01 ether;

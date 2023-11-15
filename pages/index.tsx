@@ -3,8 +3,8 @@ import Head from "next/head";
 
 import {
   useContract,
-  useMetamask,
-  useDisconnect,
+  useContractRead,
+  useContractWrite,
   useAddress,
 } from "@thirdweb-dev/react";
 import {} from "@thirdweb-dev/react";
@@ -27,40 +27,40 @@ const Home: NextPage = () => {
   const { contract, isLoading } = useContract(
     process.env.NEXT_PUBLIC_LOTTERY_CONTRACT_ADDRESS
   );
-const { data: expiration } = useContract( "expiration");
-  const { data: lastWinner } = useContract( "lastWinner");
+  const { data: expiration } = useContractRead(contract, "expiration");
+  const { data: lastWinner } = useContractRead(contract, "lastWinner");
   const { data: lastWinnerAmount } = useContract(
     
     "lastWinnerAmount"
   );
-  const { data: ticketPrice } = useContract( "ticketPrice");
-  const { data: remainingTickets } = useContract(
-    
-    "RemainingTickets"
-  );
-  const { data: tickets } = useContract( "getTickets");
+  const { data: ticketPrice } = useContractRead(contract, "ticketPrice");
+  const { data: remainingTickets } = useContractRead(
+		contract,
+		"RemainingTickets"
+	);
+  const { data: tickets } = useContractRead(contract, "getTickets");
 
-  const { mutateAsync: BuyTickets } = useContract( "BuyTickets");
+  const { mutateAsync: BuyTickets } = useContractWrite(contract, "BuyTickets");
 
   const { data: currentWinningReward } = useContract(
     
     "CurrentWinningReward"
   );
-  const { data: isLotteryOperator } = useContract(
-    
-    "lotteryOperator"
-  );
+  const { data: isLotteryOperator } = useContractRead(
+		contract,
+		"lotteryOperator"
+	);
 
-  const { mutateAsync: WithdrawWinnings } = useContract(
-    
-    "WithdrawWinnings"
-  );
+  const { mutateAsync: WithdrawWinnings } = useContractWrite(
+		contract,
+		"WithdrawWinnings"
+	);
 
-  const { data: winnings } = useContract(
-    
-    "getWinningsForAddress",
-    address
-  );
+  const { data: winnings } = useContractRead(
+		contract,
+		"getWinningsForAddress",
+		[address]
+	);
 
   console.log(winnings?.toString());
 
@@ -78,22 +78,27 @@ const { data: expiration } = useContract( "expiration");
   }, [tickets, address]);
 
   const handleClick = async () => {
-    if (!ticketPrice) return;
+		if (!ticketPrice) return;
 
-    const notification = toast.loading("Buying your tickets...");
-    try {
-      const data = await BuyTickets({
-        value: ethers.utils.parseEther(
-          (Number(ethers.utils.formatEther(ticketPrice)) * quantity).toString()
-        ),
-      });
+		const notification = toast.loading("Buying you tickets...");
 
-      toast.success("Tickets purchased successfully!", {
-        id: notification,
-      });
+		try {
+			const data = await BuyTickets({
+				overrides: {
+					value: ethers.utils.parseEther(
+						(
+							Number(ethers.utils.formatEther(ticketPrice)) * quantity
+						).toString()
+					),
+				},
+			});
 
-      console.info("contract call successs", data);
-    } catch (err) {
+			toast.success("Tickets purchased successfully!", {
+				id: notification,
+			});
+
+			console.info("contract call success", data);
+		} catch (err) {
       toast.error("Whoops something went wrong!", {
         id: notification,
       });
