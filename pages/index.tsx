@@ -29,10 +29,10 @@ const Home: NextPage = () => {
   );
   const { data: expiration } = useContractRead(contract, "expiration");
   const { data: lastWinner } = useContractRead(contract, "lastWinner");
-  const { data: lastWinnerAmount } = useContract(
-    
-    "lastWinnerAmount"
-  );
+  const { data: lastWinnerAmount } = useContractRead(
+		contract,
+		"lastWinnerAmount"
+	);
   const { data: ticketPrice } = useContractRead(contract, "ticketPrice");
   const { data: remainingTickets } = useContractRead(
 		contract,
@@ -42,10 +42,10 @@ const Home: NextPage = () => {
 
   const { mutateAsync: BuyTickets } = useContractWrite(contract, "BuyTickets");
 
-  const { data: currentWinningReward } = useContract(
-    
-    "CurrentWinningReward"
-  );
+  const { data: currentWinningReward } = useContractRead(
+		contract,
+		"CurrentWinningReward"
+	);
   const { data: isLotteryOperator } = useContractRead(
 		contract,
 		"lotteryOperator"
