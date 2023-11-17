@@ -22,4 +22,4 @@ version en ligne du site :
 
 
 #### admin control
- [![admin-control.png](https://i.postimg.cc/tg5v52YW/admin-control.png)](https://postimg.cc/NyKxG88j)
+ [![admin-panel.png](https://i.postimg.cc/wTm5QytM/admin-panel.png)](https://postimg.cc/crd8sJBG)
